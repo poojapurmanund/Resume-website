@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.resume{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: cornsilk;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0,0,0,0.2);
+}
+
+.resume .left-bar{
+    position: relative;
+    background:#870024;
+    padding: 40px;
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted lightcoral;
+}
+
+
+.profile .img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile h2{
+    color:cornsilk;
+    font-size:1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 650;
+    line-height: 1.3em;
+}
+
+.profile h2 span{
+    color:darkkhaki;
+    font-size: 0.8em;
+}
+
+.contact{
+    padding-top: 40px;
+}
+
+.title{
+    color:cornsilk;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact ul{
+    position: relative;
+}
+
+.contact ul li{
+    position: relative;
+    list-style: none;
+    margin:10px 0;
+    cursor: pointer;
+}
+
+.contact ul li .icon{
+    display: inline-block;
+    width:30px;
+    font-size: 17px;
+    color:rgb(226, 213, 24);
+}
+
+.contact ul li .text{
+    color:darkkhaki;
+    font-weight: 500;
+
+}
+
+.contact.education li{
+    margin-bottom: 15px;
+
+}
+
+.contact.education h5{
+    color:rgb(226, 213, 24);
+}
+
+.contact.education h4{
+    color:darkkhaki;
+    font-weight: 500;
+}
+
+.contact.education h4:nth-child(2){
+    color:darkorange;
+}
+
+.contact.languages .percent{
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background: cornsilk;
+    display: block;
+    margin-top: 5px;
+
+}
+
+.contact.languages .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(211, 197, 0);
+}
+
+.resume .right-bar{
+    position: relative;
+    background:cornsilk;
+    padding: 40px;
+}
+
+.resume .right-bar .about .title{
+    background: #870024;
+    text-align: center;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
